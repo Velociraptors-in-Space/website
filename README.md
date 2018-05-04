@@ -1,2 +1,2 @@
 # frc6866.github.io
-WEBSITRE
+This is the Markham Community Robotics FIRST Robotics Canada.
