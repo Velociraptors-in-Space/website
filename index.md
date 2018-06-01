@@ -1,6 +1,6 @@
 --- 
 layout: page
-name: Markham Community Robotics
+header: Markham Community Robotics
 tagline: This is the website for the Markham Community FIRST Robotics Team.
 ---
 
