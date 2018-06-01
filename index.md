@@ -1,7 +1,6 @@
 --- 
 layout: page
-title: Space Invaders 
-heading: Markham Community Robotics
+name: Markham Community Robotics
 tagline: This is the website for the Markham Community FIRST Robotics Team.
 ---
 
