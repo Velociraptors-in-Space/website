@@ -1,5 +1,5 @@
 # Markham Community Robotics Website
-This is a website for Markville Robotics.
+This is a website for Markham Community Robotics.
 
 ## Issues
 Find a issue with the webpages? Make a issue report (click that 'issues' tab).
