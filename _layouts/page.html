@@ -1,45 +1,31 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
+---
+layout: default
+---
 
-{% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">{{ page.header }}</h1>
-      <a href="{{ "" | absolute_url }}" class="btn">Home</a>
-      <a href="{{ "about" | absolute_url }}" class="btn">About</a>
-      <a href="{{ "events" | absolute_url }}" class="btn">Events</a>
-      <a href="{{ "sponsorship" | absolute_url }}" class="btn">Sponsorship</a>
-    </section>
-
-    <section class="main-content">
-      {{ content }}
-     
-      <footer class="site-footer">
-        <h1>Find us here:</h1>
-        <p>Facebook</p>
-        <p>Instagram</p>
-        <p>Email: <a href="mailto:frcteam6866@gmail.com">frcteam6866@gmail.com</a></p>
-        <p></p>
-        © Markham Community Robotics
-      </footer>
-    </section>
-
-    {% if site.google_analytics %}
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
+<article {% if page.feature-img %}class="feature-image"{% endif %}>
+  <header id="main" style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
+    <h1 id="{{ page.title | default: "" | cgi_escape }}" class="title">
+        {{ page.title }}
+    </h1>
+    
+    {% if page.subtitle %}
+    <h2 class="subtitle">{{ page.subtitle }}</h2>
     {% endif %}
-  </body>
-</html>
+      
+  </header>
+  <section class="post-content">
+  {% if page.bootstrap %}
+  <div class="bootstrap-iso">
+  {% endif %}
+	{{ content }}
+  {% if page.bootstrap %}
+  </div>
+  {% endif %}
+  </section>
+    
+    
+  <!-- Tag list for portfolio -->
+  {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
+  {% include tags_list.html tags=tag_list %}
+    
+</article>
