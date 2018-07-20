@@ -8,8 +8,8 @@
         "title"    : "{{ page.title | escape }}",
         "tags"     : "{{ page.tags | join: ', ' | prepend: " " }}",
         "url"      : "{{ site.baseurl }}{{ page.url }}",
-        "excerpt"  : {{ post.content | truncate: '250' | jsonify }},
-        "content"  : {{ post.content | jsonify }}
+        "excerpt"  : {{ page.content | truncate: '250' | jsonify }},
+        "content"  : {{ page.content | jsonify }}
       } {% unless forloop.last %},{% endunless %}
    {% endfor %}
    
