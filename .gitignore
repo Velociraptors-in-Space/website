@@ -4,6 +4,9 @@
 # Mac files
 .DS_Store
 
+# System files
+.ini
+
 # Byte-compiled / optimized / DLL files
 *.manifest
 *.spec
