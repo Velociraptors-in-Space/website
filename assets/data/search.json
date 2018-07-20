@@ -13,7 +13,7 @@ hide: true
 					"content"  : {{ page.content | jsonify }}
 				} 
 				{% unless forloop.last %},{% endunless %}
-			{% endif &}
+			{% endif %}
 		{% endfor %}
 	{% endif %}
 ]
