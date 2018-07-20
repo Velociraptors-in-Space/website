@@ -21,7 +21,7 @@ theme_settings:
    © Markham Community Robotics
 
   # Icons
-  rss: false  # Make sure you created a feed.xml with feed.xml layout
+  rss: true  # Make sure you created a feed.xml with feed.xml layout
   email_address: frcteam6866@gmail.com
   behance:
   bitbucket:
