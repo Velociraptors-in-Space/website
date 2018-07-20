@@ -9,7 +9,7 @@ description: "The home of FRC Team 6866 - Space Invaders, a Community Team for t
 theme_settings:
   # Meta
   title: Markham Community Robotics # blog's title
-  avatar: assets/img/triangle.svg
+  avatar: assets/img/spaceinvaders.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
 
