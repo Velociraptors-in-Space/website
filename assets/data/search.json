@@ -1,9 +1,11 @@
 ---
+hide: true
 ---
 [
   {% if site.theme_settings.special_page.search.enabled %}
    
    {% for page in site.pages %}
+   {% if page.hide %}
       {
         "title"    : "{{ page.title | escape }}",
         "tags"     : "{{ page.tags | join: ', ' | prepend: " " }}",
@@ -11,6 +13,7 @@
         "excerpt"  : {{ page.content | truncate: '250' | jsonify }},
         "content"  : {{ page.content | jsonify }}
       } {% unless forloop.last %},{% endunless %}
+   {% endif &}
    {% endfor %}
    
   {% endif %}
