@@ -1,26 +1,5 @@
-# Idea files
-.idea/*
-
-# Mac files
-.DS_Store
-
-# System files
-.ini
-
-# Byte-compiled / optimized / DLL files
-*.manifest
-*.spec
-
-# Jekyll dev or build files
-_site/*
-_development_tool/*
-.sass-cache/*
-*.css.map
-*.scssc
-
-# Theme Gem files
+.bundle
+.sass-cache
 Gemfile.lock
+_site
 *.gem
-.gems
-jekyll-theme-type-on-strap.gemspec
-node_modules/*
