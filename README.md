@@ -1,20 +1,11 @@
-# Jekyll Materialize Starter Template v0.1
+# Markham Community Robotics Website
+This is a website for Markham Community Robotics.
 
-*A Site Starter Materialize Templates.
+## Issues
+Find a issue with the webpages? Make a issue report (click that 'issues' tab).
 
-The theme is a fork of the [minima][1]
+## Contribution 
+We use Jekyll. That means posts should be created in a Markdown + HTML + Liquid format with YAML front matters. See [here](CONTRIBUTING.md) for a posting guide that is applicable to our website. Please refer to [this](https://jekyllrb.com/docs/posts/) webpage to learn more about writing Jekyll compatible posts. You shouldn't have to touch anything other than the posts.
 
-![minima theme preview](/screenshot.png)
-
-
-# License
-
-The theme is available as so I use this source [MIT License][2].
-
-[Materialize][3] a  modern responsive front-end framework based on Material Design
-
-Copyright © 2017 Marco Damiani. Powered by <a href="http://jekyllrb.com">Jekyll</a>
-
-[1]: https://github.com/jekyll/minima
-[2]: https://opensource.org/licenses/MIT
-[3]: http://materializecss.com/
+## Branches
+Upon the suggestion of experienced web designers, we use 2 branches: develop, and master. Develop is used (as the name suggests) for the development of pages. Please send pull requests to that branch. We use master to host the website, so we will push develop to master periodically. 
