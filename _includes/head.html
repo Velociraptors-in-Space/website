@@ -2,7 +2,16 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <meta name="google-site-verification" content="BpfgLkL6ZaFkg7QprtWa4q_red9bIEH22B57Rla3_5Q" />
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W73M3XG');</script>
+    <!-- End Google Tag Manager -->
 
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
@@ -11,7 +20,7 @@
         <div class="nav-wrapper">
 
             <a id="logo-container" class="brand-logo" href="">
-                <img src="/assets/logos/regular.png"style="width:68.66px;height:68.66px">
+                <img src="/assets/logos/regular.png" style="width:68.66px;height:68.66px">
                 <span style="">Space Invaders</span>
             </a>
 
@@ -21,7 +30,7 @@
                 <li><a href="/sponsor/">Sponsorship</a></li>
 
             </ul>
-        
+
             <ul id="nav-mobile" class="side-nav">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about/">About</a></li>

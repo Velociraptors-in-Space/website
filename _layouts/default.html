@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    <main>
-        {{ content }}
-    </main>
-    
-    {% include footer.html %}
-      
-    {% include script.html %}
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W73M3XG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-  </body>
+  <main>
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  {% include script.html %}
+
+</body>
 
 </html>
