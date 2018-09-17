@@ -1,7 +1,60 @@
 ---
 layout: page
 title: Gallery
-tags: [Gallery]
+permalink: /gallery/
 ---
 
-{% include gallery.html gallery_path="assets/img/gallery" %}
+<h1 class="page-title"> {{ page.title | escape }}</h1>
+<style>
+img { 
+    width: 100%;
+    height:auto;
+}
+table, th, td {
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 10px;
+    }
+</style>
+
+<div class="section" >
+    <table style="width:100%">
+        <tr>    
+            <th></th>
+            <th><h4 style="text-align:center">2017-2018 School Visits</h4></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><img src="/assets/gallery/schoolvisit1.jpg"></td>
+            <td><img src="/assets/gallery/schoolvisit2.jpg"></td>
+            <td><img src="/assets/gallery/schoolvisit3.jpg"></td>
+        </tr>
+    </table>
+</div>
+<div class="divider"></div>
+<div class="section">
+    <table style="width:100%">
+        <tr>
+            <th></th>
+            <th><h4 style="text-align:center">2017-2018 Ryerson University</h4></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><img src="/assets/gallery/ryerson1.jpg"></td>
+            <td><img src="/assets/gallery/ryerson2.jpg"></td>
+            <td><img src="/assets/gallery/ryerson3.jpg"></td>
+        </tr>
+        <tr>
+            <td><img src="/assets/gallery/ryerson4.jpg"></td>
+            <td><img src="/assets/gallery/ryerson5.jpg"></td>
+            <td><img src="/assets/gallery/ryerson6.jpg"></td>
+        </tr>
+        <tr>
+            <td><img src="/assets/gallery/ryerson7.jpg"></td>
+            <td><img src="/assets/gallery/ryerson8.jpg"></td>
+            <td><img src="/assets/gallery/ryerson9.jpg"></td>
+        </tr>
+    </table>
+</div>
+<div class="divider"></div>
