@@ -17,7 +17,7 @@
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
 
     <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper">
+        <div class="nav-wrapper container">
 
             <a id="logo-container" class="brand-logo" href="">
                 Space Invaders
@@ -44,6 +44,7 @@
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
     </nav>
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="{{ "assets/materialize.css" | relative_url }}" />
     <link rel="stylesheet" type="text/css" media="screen,projection" href="{{ "assets/main.css" | relative_url }}">
