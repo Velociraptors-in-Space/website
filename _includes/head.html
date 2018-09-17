@@ -8,8 +8,12 @@
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
 
     <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" class="brand-logo" href=""><img src="/assets/logos/regular.png"
-                    style="width:68.66px;height:68.66px"></a>
+        <div class="nav-wrapper">
+
+            <a id="logo-container" class="brand-logo" href="">
+                <img src="/assets/logos/regular.png"style="width:68.66px;height:68.66px">
+                <span style="">Space Invaders</span>
+            </a>
 
             <ul class="right hide-on-med-and-down">
                 <li><a href="/about/">About</a></li>
@@ -17,9 +21,7 @@
                 <li><a href="/sponsor/">Sponsorship</a></li>
 
             </ul>
-            <ul class="left hide-on-med-and-down">
-                <li><a href="/">_____- Space Invaders </a></li>
-            </ul>
+        
             <ul id="nav-mobile" class="side-nav">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about/">About</a></li>
