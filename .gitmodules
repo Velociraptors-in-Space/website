@@ -1,0 +1,3 @@
+[submodule "programming-lessons"]
+	path = programming-lessons
+	url = https://github.com/MarkhamCommunityRobotics/programming-lessons
