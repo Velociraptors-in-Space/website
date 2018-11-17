@@ -22,3 +22,5 @@ Meet us at Markham Village Library on November 23rd from 1 PM - 3 PM.
 We hope to see you there!
 
 If you have any questions, please contact us at [contact@mcrobotics.ca](mailto:contact@mcrobotics.ca)
+
+![Poster advertising above event](http://mcrobotics.ca/assets/2018-11-17-markham-village-poster.jpg)
