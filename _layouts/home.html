@@ -15,12 +15,10 @@ layout: default
 
 <div class="container">
   <div class="section">
-
     <div class="divider"></div>
     <div class="icon-block">
       <h2 class="center"><i class="material-icons">person</i></h2>
       <h5 class="center">About</h5>
-
       <p class="light">Team 6866, Space Invaders is a high school robotics team located in Markham, Ontario comprised
         of students from across the region. The team provides students with the opportunity to explore the fields of
         STEM (science, technology, engineering, and math) in a dynamic environment. Our involvement in the program
@@ -30,7 +28,6 @@ layout: default
     <div class="icon-block">
       <h2 class="center"><i class="material-icons">settings</i></h2>
       <h5 class="center">Our Mission</h5>
-
       <p class="light">The team was established with the objectives of: Promoting and raising awareness of STEM
         (science, technology, engineering, and math) fields, primarily in the York Region; Inspiring youth and others
         within the community to pursue careers in science, math, business, and the skilled trades; Establishing a
@@ -43,38 +40,37 @@ layout: default
     <div class="icon-block">
       <h2 class="center"><i class="material-icons">train</i></h2>
       <h5 class="center">Our Journey</h5>
-
       <p class="light">Team 6866 was founded in April 2017, by a group of students looking to build an accessible
         outlet for youth interested in exploring the STEM fields. We became a Not-for-Profit Corporation in August
         2017. In November 2017, we increased to over 30 student members and 8 adult mentors. In January 2018, we headed
         into our first build season.</p>
-
     </div>
     <div class="divider"></div>
   </div>
 
-</div>
-
-</div>
-<div style="background: #ddd">
-  <div class="container last-post">
-    <section>
-      <h5>Latest Post</h5>
-      <ul class="collection">
-        {% for post in site.posts limit: 3 %}
-        <li class="collection-item avatar">
-          {% assign date_format = site.minima.date_format | default: "%m/%d" %}
-          <div class="date-post">{{ post.date | date: date_format }}</div>
-          <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
-          <p>
-            {{ post.content | truncatewords: 10 }}
-          </p>
-          <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
-        </li>
-        {% endfor %}
-      </ul>
-    </section>
+  <div style="background: #ddd">
+    <div class="container last-post">
+      <section>
+        <h5>Latest Post</h5>
+        <ul class="collection">
+          {% for post in site.posts limit: 5 %}
+          <li class="collection-item avatar">
+            {% assign date_format = site.minima.date_format | default: "%m/%d" %}
+            <div class="date-post">{{ post.date | date: date_format }}</div>
+            <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
+            <p>
+              {{ post.content | truncatewords: 10 }}
+            </p>
+            <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
   </div>
 </div>
 
+<div class="container">
+  <div class="section">
+  </div>
 </div>
