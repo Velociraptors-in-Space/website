@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-<link rel="icon" 
-      type="image/png" 
-      href="/assets/icon.png">
+<link rel="icon" type="image/png" href="/assets/icon.png">
 
 {% include head.html %}
 
 <body>
-
+  <div id="wrap">
+  <div id="main">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W73M3XG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
@@ -16,10 +15,11 @@
     {{ content }}
   </main>
 
-  {% include footer.html %}
-
+  
+  
   {% include script.html %}
-
+</div>
+</div>
 </body>
-
+{% include footer.html %}
 </html>
