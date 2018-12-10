@@ -22,52 +22,37 @@ permalink: /blog/
   }
 </style>
 
-<div >
-  <div class="last-post">
-    <section>
-      <h5 style="text-align:center">Latest Post</h5>
-      <ul class="collection">
-        {% assign temp = 1 %}
-        {% for post in site.posts %}
-        {% if temp == 1 %}
+<h5 style="text-align:center">Blog</h5>
+<ul class="collection">
+  {% assign temp = 1 %}
+  {% for post in site.posts %}
+  {% if temp == 1 %}
 
-        <table style="width:100%">
-          <tr>
-            <th style="width:50%"><a class="post-link" href="{{ post.url | relative_url }}"><img src="/assets/posts/{{ post.image }}"></a></th>
-            <th style="width:50%"><h4><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
-              <p>
-                {{ post.content | truncatewords: 25 }}
-              </p>
-            </th>
-          </tr>
-        </table>
-        <!-- <li class="collection-item avatar">
-            {% assign date_format = site.minima.date_format | default: "%m/%d" %}
-            
-            <div class="date-post">{{ post.date | date: date_format }}</div>
-            <span class="title"><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></span>
-        !--    <p>
-              {{ post.content | truncatewords: 10 }}
-            </p>--
-            <a href="{{ post.url | relative_url }}" class="secondary-content"><i class="material-icons">navigate_next</i></a>
-          </li>-->
-
-        {% assign temp = 0 %}
-        {% elsif temp == 0 %}
-        <table style="width:100%">
-          <tr>
-            <th style="width:50%"><h4><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
-              <p>
-                {{ post.content | truncatewords: 25 }}
-              </p>
-            </th>
-            <th style="width:50%"><a class="post-link" href="{{ post.url | relative_url }}"><img src="/assets/posts/{{ post.image }}"></a></th>
-          </tr>
-        </table>
-        {% assign temp = 1 %}
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </section>
-  </div>
-</div>
+  <table style="width:100%">
+    <tr>
+      <th style="width:50%"><a class="post-link" href="{{ post.url | relative_url }}"><img src="/assets/posts/{{ post.image }}"></a></th>
+      <th style="width:50%">
+        <h4><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
+        <p>
+          {{ post.content | truncatewords: 25 }}
+        </p>
+      </th>
+    </tr>
+  </table>
+  {% assign temp = 0 %}
+  {% elsif temp == 0 %}
+  <table style="width:100%">
+    <tr>
+      <th style="width:50%">
+        <h4><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
+        <p>
+          {{ post.content | truncatewords: 25 }}
+        </p>
+      </th>
+      <th style="width:50%"><a class="post-link" href="{{ post.url | relative_url }}"><img src="/assets/posts/{{ post.image }}"></a></th>
+    </tr>
+  </table>
+  {% assign temp = 1 %}
+  {% endif %}
+  {% endfor %}
+</ul>
