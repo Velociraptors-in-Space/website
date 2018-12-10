@@ -2,6 +2,7 @@
 layout: post
 title: "Our First FIRST Meeting"
 author: "Michael Zhou"
+image: 2018-10-09-first-meeting-poster.jpg
 ---
 
 Hello everyone!

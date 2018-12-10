@@ -2,6 +2,7 @@
 layout: post
 title: "PA Day Event At Markham Village Library"
 author: "Balaji Venkatesh"
+image: 2018-11-17-markham-village-poster.jpg
 ---
 
 Hello everyone,
