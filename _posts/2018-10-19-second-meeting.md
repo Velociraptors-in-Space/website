@@ -2,7 +2,7 @@
 layout: post
 title: "Our Second FIRST Meeting"
 author: "Balaji Venkatesh"
-image: team.jpg
+image: null
 ---
 
 Hello everyone!

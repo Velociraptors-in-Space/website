@@ -22,7 +22,6 @@ permalink: /blog/
   }
 </style>
 
-<h5 style="text-align:center">Blog</h5>
 <ul class="collection">
   {% assign temp = 1 %}
   {% for post in site.posts %}
@@ -30,7 +29,11 @@ permalink: /blog/
 
   <a href="#!" class="collection-item" href="{{ post.url | relative_url }}">
 
+    {% if post.image != 'null' %}
     <img src="/assets/posts/{{ post.image }}">
+    {% elsif %}
+    <img src="/assets/posts/null.png">
+    {% endif %}
 
     <h4>{{ post.title | escape }}</h4>
 
@@ -46,7 +49,11 @@ permalink: /blog/
 
   <a href="#!" class="collection-item" href="{{ post.url | relative_url }}">
 
+    {% if post.image != 'null' %}
     <img src="/assets/posts/{{ post.image }}">
+    {% elsif %}
+    <img src="/assets/posts/null.png">
+    {% endif %}
 
     <h4>{{ post.title | escape }}</h4>
 
