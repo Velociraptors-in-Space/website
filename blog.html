@@ -4,55 +4,53 @@ title: Blog
 permalink: /blog/
 ---
 
-<style>
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  table,
-  th,
-  td {
-    border-collapse: collapse;
-  }
-
-  th,
-  td {
-    padding: 10px;
-  }
-</style>
-
 <h5 style="text-align:center">Blog</h5>
 <ul class="collection">
+
   {% assign temp = 1 %}
   {% for post in site.posts %}
   {% if temp == 1 %}
 
-  <a href="#!" class="collection-item" href="{{ post.url | relative_url }}">
+  <a class="collection-item" href="{{ post.url | relative_url }}">
 
-    <img src="/assets/posts/{{ post.image }}">
+    <div class="row">
 
-    <h4>{{ post.title | escape }}</h4>
+      <div class="col s12 m6">
+        <img style="width: 100%" src="/assets/posts/{{ post.image }}">
+      </div>
 
-    <p>
-      {{ post.content | truncatewords: 25 }}
-    </p>
+      <div class="col s12 m6">
+        <h4>{{ post.title | escape }}</h4>
+
+        <p>
+          {{ post.content | truncatewords: 25 }}
+        </p>
+      </div>
+
+    </div>
 
   </a>
-
 
   {% assign temp = 0 %}
   {% elsif temp == 0 %}
 
-  <a href="#!" class="collection-item" href="{{ post.url | relative_url }}">
+  <a class="collection-item" href="{{ post.url | relative_url }}">
 
-    <img src="/assets/posts/{{ post.image }}">
+    <div class="row">
 
-    <h4>{{ post.title | escape }}</h4>
+      <div class="col s12 m6">
+        <h4>{{ post.title | escape }}</h4>
 
-    <p>
-      {{ post.content | truncatewords: 25 }}
-    </p>
+        <p>
+          {{ post.content | truncatewords: 25 }}
+        </p>
+      </div>
+
+      <div class="col s12 m6">
+        <img style="width: 100%" src="/assets/posts/{{ post.image }}">
+      </div>
+
+    </div>
 
   </a>
 
