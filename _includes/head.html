@@ -2,54 +2,22 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    
+
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-W73M3XG');</script>
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PCNPHV7');</script>
     <!-- End Google Tag Manager -->
 
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
 
-    <nav class="deep-purple darken-2" role="navigation">
-        <div class="nav-wrapper container">
-
-            <a id="logo-container" class="brand-logo hide-on-med-and-down" href="/">
-                Team 6866
-            </a>
-
-            <a id="logo-container" class="brand-logo center" href="/">
-                <img src="/assets/logos/regular no-6866.png" style="width:68.66px;height:68.66px;padding:5px">
-            </a>
-
-            <ul class="right hide-on-med-and-down">
-                <li><a href="/about/">About</a></li>
-                <li><a href="/gallery/">Gallery</a></li>
-                <li><a href="/blog/">Outreach</a></li>
-                <!--<li><a>Members</a></li>-->
-                <li><a href="/sponsor/">Sponsors</a></li>
-                <!--<li><a href="/join-us/">Join Us</a></li>-->
-            </ul>
-
-            <ul id="nav-mobile" class="side-nav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/gallery/">Gallery</a></li>
-                <li><a href="/blog/">Outreach</a></li>
-                <!--<li><a>Members</a></li>-->
-                <li><a href="/sponsor/">Sponsors</a></li>
-                <!--<li><a href="/join-us/">Join Us</a></li>-->
-            </ul>
-
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-        </div>
-    </nav>
+    {% include nav.html %}
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="{{ "assets/materialize.css" | relative_url }}" />
