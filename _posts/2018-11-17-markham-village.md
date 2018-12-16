@@ -26,4 +26,4 @@ We hope to see you there!
 
 If you have any questions, please contact us at [contact@mcrobotics.ca](mailto:contact@mcrobotics.ca)
 
-![Poster advertising above event](http://mcrobotics.ca/assets/posts/2018-11-17-markham-village-poster.jpg)
+<img src="http://mcrobotics.ca/assets/posts/2018-11-17-markham-village-poster.jpg" alt="Poster advertising above event" style="width:100%;"/>
