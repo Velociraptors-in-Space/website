@@ -80,7 +80,7 @@ nav {
 }
 #main {
     overflow:auto;
-    padding-bottom:150px; /* this needs to be bigger than footer height*/
+    padding-bottom:0px; /* this needs to be bigger than footer height*/
   }
 
 footer {
@@ -89,9 +89,9 @@ footer {
     background-size: 100%;
     width: 100%;
 
-    position: relative;
-    margin-top: -128px;  /*negative value of footer height, change so it includes the header, so it is -125-header height*/
-    height: 128px;
+    position: absolute;
+    margin-top: 0px;  /*negative value of footer height, change so it includes the header, so it is -125-header height*/
+    height: auto;
     clear:both;
     padding-top:10px;
 }
