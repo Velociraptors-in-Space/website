@@ -89,9 +89,15 @@ footer {
     background-size: 100%;
     width: 100%;
 
+<<<<<<< HEAD
     position: absolute;
     margin-top: 0px;  /*negative value of footer height, change so it includes the header, so it is -125-header height*/
     height: auto;
+=======
+    position: relative;
+    margin-top: -128px;  /*negative value of footer height, change so it includes the header, so it is -125-header height*/
+    height: 128px;
+>>>>>>> cbe31d1bb82020f22f1af5356987f61889f99668
     clear:both;
     padding-top:10px;
 }
