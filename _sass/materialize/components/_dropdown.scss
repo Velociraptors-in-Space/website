@@ -1,6 +1,6 @@
 .dropdown-content {
   @extend .z-depth-1;
-  background-color: $dropdown-bg-color;
+  background-color:#b39ddb ;
   margin: 0;
   display: none;
   min-width: 100px;
@@ -36,7 +36,7 @@
 
     & > a, & > span {
       font-size: 16px;
-      color: $dropdown-color;
+      color: white;
       display: block;
       line-height: 22px;
       padding: (($dropdown-item-height - 22) / 2) 16px;

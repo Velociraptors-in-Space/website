@@ -31,14 +31,14 @@
     position: relative;
 
     .card-image {
-      max-height: 60%;
+      max-height: 80%;
       overflow: hidden;
     }
     .card-image + .card-content {
-      max-height: 40%;
+      max-height: 10%;
     }
     .card-content {
-      max-height: 100%;
+      max-height: 60%;
       overflow: hidden;
     }
     .card-action {
@@ -54,7 +54,7 @@
   }
 
   &.medium {
-    height: 400px;
+    height: 360px;
   }
 
   &.large {
@@ -109,9 +109,6 @@
       padding-bottom: 64px;
     }
   }
-
-
-
 
   .card-image {
     position: relative;
