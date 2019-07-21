@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "FLL Team 41807 Berczy Bots at Markham District Event"
-author: "Michael Zhou"
+author: "Space Invaders"
 image: 2018-12-13-fll-berczy-bots.jpg
 ---
 

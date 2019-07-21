@@ -1,25 +1,26 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-<link rel="icon" type="image/png" href="/assets/logo.png">
-
 {% include head.html %}
 
-<body>
-  <div id="wrap">
-    <div id="main">
+<body style="display: flex; flex-direction: column; height: 100%;">
+  <div id="main">
 
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCNPHV7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCNPHV7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-      <main>
-        {{ content }}
-      </main>
+    <main>
+      {{ content }}
+    </main>
 
-      {% include script.html %}
-    </div>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      M.AutoInit();
+    });
+  </script>
+
 </body>
+
 {% include footer.html %}
 
 </html>

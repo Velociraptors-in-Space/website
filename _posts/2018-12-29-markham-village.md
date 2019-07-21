@@ -1,13 +1,16 @@
 ---
 layout: post
 title: "Outreach Event At Markham Village Library"
-author: "Balaji Venkatesh"
-image: 2018-12-29-markham-village-poster.jpg
+author: "Space Invaders"
+image: "assets/team.jpg"
+excerpt_separator: <!--more-->
 ---
 
 Hello everyone,
 
 We’re happy to announce our partnership with Markham Public Library to bring you our STEM Workshop at Markham Village Library! All attendees will have the chance to participate in workshops with fun Science, Technology, Engineering, and Math activities.
+
+<!--more-->
 
 Experiments are conducted with:
 
@@ -26,4 +29,4 @@ We hope to see you there!
 
 If you have any questions, please contact us at [contact@mcrobotics.ca](mailto:contact@mcrobotics.ca)
 
-<img src="http://mcrobotics.ca/assets/posts/2018-12-29-markham-village-poster.jpg" alt="Poster advertising above event" style="width:100%;"/>
+{% include gallery.html %}

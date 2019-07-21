@@ -1,5 +1,0 @@
-The BA License (BA)
-
-Copyright (c) 2018 Markham Community Robotics
-
-No you cannot have any of this code. (Except for the parts that aren't ours, they have their own licenses)

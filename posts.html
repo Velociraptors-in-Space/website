@@ -1,0 +1,37 @@
+---
+layout: page
+title: Posts
+permalink: /posts/
+---
+
+
+{% for post in site.posts %}
+
+<div class="card horizontal">
+
+  {% if post.image != null %}
+
+  <div class="card-image">
+    <img src="/assets/posts/{{ post.image }}">
+  </div>
+
+  {% endif %}
+
+  <div class="card-stacked">
+    <div class="card-content">
+      <h4>{{ post.title | escape }}</h4>
+      <p>
+        {{ post.excerpt }}
+      </p>
+    </div>
+    <div class="card-action">
+      <a href="{{ post.url | relative_url }}">View Post</a>
+    </div>
+  </div>
+
+</div>
+
+{% endfor %}
+
+<a class="twitter-timeline" href="https://twitter.com/frc6866?ref_src=twsrc%5Etfw">Tweets by frc6866</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
