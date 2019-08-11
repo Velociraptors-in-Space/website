@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Outreach Event At Markham Village Library"
-author: "Space Invaders"
+
 image: 2018-12-29-markham-village-poster.jpg
 excerpt_separator: <!--more-->
 ---

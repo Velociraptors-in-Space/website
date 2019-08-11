@@ -1,24 +1,26 @@
 ---
 layout: page
 title: Posts
-permalink: /posts/
+navbar: Posts
 ---
 
 
 {% for post in site.posts %}
 
-<div class="card horizontal">
+{% if post.image != null %}
 
-  {% if post.image != null %}
+<div class="card horizontal small">
 
   <div class="card-image">
-    <img src="/assets/posts/{{ post.image }}">
+    <img width="100" src="/assets/posts/{{ post.image }}">
   </div>
-
-  {% endif %}
 
   <div class="card-stacked">
     <div class="card-content">
+      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished" style="color:purple">
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        {{ post.date | date: date_format }}
+      </time>
       <h4>{{ post.title | escape }}</h4>
       <p>
         {{ post.excerpt }}
@@ -31,5 +33,24 @@ permalink: /posts/
 
 </div>
 
-{% endfor %}
+{% else %}
 
+<div class="card">
+  <div class="card-content">
+    <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished" style="color:purple">
+      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+      {{ post.date | date: date_format }}
+    </time>
+    <h4>{{ post.title | escape }}</h4>
+    <p>
+      {{ post.excerpt }}
+    </p>
+  </div>
+  <div class="card-action">
+    <a href="{{ post.url | relative_url }}">View Post</a>
+  </div>
+</div>
+
+{% endif %}
+
+{% endfor %}
