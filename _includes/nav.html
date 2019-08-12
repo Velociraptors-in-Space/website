@@ -1,3 +1,7 @@
-<li><a href='/gallery/'>Gallery</a></li>
-<li><a href="/posts/">Posts</a></li>
-<li><a href="/2019/01/05/sponsors/">Sponsors</a></li>
+{% for page in site.pages %}
+{% if page.navbar %}
+
+<li><a href='{{ page.url }}'>{{ page.navbar }}</a></li>
+
+{% endif %}
+{% endfor %}
