@@ -6,8 +6,8 @@ author: Balaji Venkatesh
 
 One of our sponsors, Kidzwhiz, is hosting a FIRST LEGO League Robotics team this year!
 
-Please complete this sign up form by Friday, September 20 if you're interested. Spots are limited!
-https://docs.google.com/forms/u/2/d/e/1FAIpQLSc2ka0LZnIwgHSgGXx3c0ESrYOdqpZPaTmNP1GV8eJKgw_mDQ/viewform
+Please complete [this sign up form](https://docs.google.com/forms/u/2/d/e/1FAIpQLSc2ka0LZnIwgHSgGXx3c0ESrYOdqpZPaTmNP1GV8eJKgw_mDQ/viewform) by Friday, September 20 if you're interested. Spots are limited!
+
 
 The  FIRST® LEGO® League (FLL) is a program that supports children and youngsters in order to introduce them to science and technology in a sporty atmosphere.
  
